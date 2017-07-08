@@ -1,4 +1,4 @@
-~ GIT COMMANDS ~
+# GIT COMMANDS
 
 git init .		-> Make a new folder and write
 				This initializes the git repository.
@@ -13,7 +13,7 @@ git diff 'filename'	-> will find what new is added in the file. This will be bef
 
 git log			-> Will find previous commits and changes.
 
-Branches ---------------------
+## Branches
 
 When working on the code, when the thing is working properly and we want to test out some changes,
 we branch out from the main code, test the new thing. If it works, we merge it with the earlier master branch.
@@ -28,7 +28,7 @@ git branch		-> Will print name of created branches.
 git checkout 'branch_name' -> Will shift to other branch.
 
 
-Merging-------------------------
+## Merging
 
 After developing various branches, we need to merge it in a single code base.
 
@@ -39,7 +39,7 @@ git merge 'branch_name'	-> branch to merge with
 
 git branch -d 'branch_name'	-> Deletes the branch
 
-Reverting--------------------------
+## Reverting
 
 To revert to committed changes
 
@@ -49,7 +49,7 @@ git checkout <Hash>	-> Will only checkout the commit instead of deleting the oth
 
 git checkout master 	-> To go back to the master branch
 
-Remote repo-------------------------
+## Remote repo
 
 git remote 	-> List remote repository
 
@@ -60,7 +60,7 @@ git remote add <name> <url>	->  name:- shortcut for url,	url:- repo link from gi
 git remote <name> --all		-> uploads all branches to remote repository
 
 
-~ Tmux Commands ~
+# Tmux Commands
 
 **CTRL + b, then ? - List all key bindings. 
 
@@ -81,5 +81,5 @@ tmux attach -t session-name - Connect to an existing tmux session named session-
 tmux switch -t session-name - Switches to an existing tmux session named session-name.
 
 
-~ Bash Commands ~
+# Bash Commands
 Reducing current directory address size in Bash: PS1='\u:\W\$ '
